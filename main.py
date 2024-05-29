@@ -94,10 +94,10 @@ async def UsersRecommend(year: int):
                     "Puesto 1": "Elden Ring"
                 },
                 {
-                    "Puesto 2": "God of War Ragnarök"
+                    "Puesto 2": "Among Us"
                 },
                 {
-                    "Puesto 3": "Starfield"
+                    "Puesto 3": "Cyberpunk 2077"
                 }
             ]
             
@@ -147,7 +147,7 @@ async def UsersWorstDeveloper(year: int):
                     "Puesto 2": "EA"
                 },
                 {
-                    "Puesto 3": "Activision Blizzard"
+                    "Puesto 3": "Valve"
                 }
             ]
             
@@ -219,9 +219,9 @@ async def recomendacion_juego(id_producto: int):
             ```
             [
                 "Recomendación 1: Elden Ring",
-                "Recomendación 2: God of War Ragnarök",
-                "Recomendación 3: Starfield",
-                "Recomendación 4: Horizon Forbidden West",
+                "Recomendación 2: Halo Infinite",
+                "Recomendación 3: Asseto Corsa Competizione",
+                "Recomendación 4: Farming Simulator 22",
                 "Recomendación 5: Forza Horizon 5"
             ]
             
