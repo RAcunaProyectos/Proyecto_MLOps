@@ -19,6 +19,11 @@ async def PlayTimeGenre(genero: str):
             "Año de lanzamiento con más horas jugadas para Acción": 2000
         }
     """
+    # Convertimos el género ingresado a minúsculas
+    genero = genero.lower()
+
+    # Convertimos los géneros en el DataFrame a minúsculas
+    df_genero["genres"] = df_genero["genres"].str.lower()
     # Leemos el archivo parquet
     df_genero = pd.read_parquet("Data/endpoint_1")
 
@@ -60,6 +65,12 @@ async def UserForGenre(genero: str):
 
     # Convertimos  la columna 'playtime' de minutos a horas
     df_endpoint_2['playtime'] = round(df_endpoint_2['playtime'] / 60, 2)
+
+    # Convertimos el género ingresado a minúsculas
+    genero = genero.lower()
+
+    # Convertimos los géneros en el DataFrame a minúsculas
+    df_endpoint_2['genres'] = df_endpoint_2['genres'].str.lower()
 
     # Filtramos el DataFrame por el género especificado
     df_genero_especifico = df_endpoint_2[df_endpoint_2['genres'] == genero]
@@ -194,8 +205,14 @@ async def sentiment_analysis(empresa_desarrolladora: str):
             }
             
     """
+    # Convertimos el nombre de la empresa desarrolladora ingresada a minúsculas
+    empresa_desarrolladora = empresa_desarrolladora.lower()
+
     # Cargamos el DataFrame desde la ruta del archivo.
     df = pd.read_parquet("Data/df_australian_user_reviews")
+
+    # Convertimos los nombres de las empresas en el DataFrame a minúsculas
+    df["developer"] = df["developer"].str.lower()
 
     # Filtramos los registros con el developer especificado.
     df_developer = df[df["developer"] == empresa_desarrolladora]
