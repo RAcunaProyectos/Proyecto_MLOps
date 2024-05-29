@@ -40,7 +40,7 @@ async def UserForGenre(genero: str):
 
         ```
         {
-            "Usuario con más horas jugadas para Acción": 1234567890,
+            "Usuario con más horas jugadas para Acción": 312783,
             "Horas jugadas": [
                 {
                     "Año": 2000,
