@@ -25,8 +25,3 @@ Durante el Análisis Exploratorio de Datos (EDA), se abordaron los valores nulos
 ## Links de recursos
 Link API: https://proyecto-romanacuna.onrender.com/docs
 Link al video explicativo: 
-=======
-# Proyecto_MLOps
-
-![image](https://github.com/RAcunaProyectos/Proyecto_MLOps/assets/150960793/94a62d30-4163-4e65-8ca6-7274ee1676cf)
->>>>>>> parent of 059c702 (Update README.md)
