@@ -19,15 +19,9 @@ async def PlayTimeGenre(genero: str):
             "Año de lanzamiento con más horas jugadas para Acción": 2000
         }
     """
-    # Convertimos el género ingresado a minúsculas
-    genero = genero.lower()
-
     # Leemos el archivo parquet
     df_genero = pd.read_parquet("Data/endpoint_1")
 
-    # Convertimos los géneros en el DataFrame a minúsculas
-    df_genero["genres"] = df_genero["genres"].str.lower()
-    
     # Filtramos el DataFrame por el género especificado
     df_genero = df_genero[df_genero["genres"] == genero]
 
