@@ -25,4 +25,3 @@ Durante el Análisis Exploratorio de Datos (EDA), se abordaron los valores nulos
 ## Links de recursos
 Link API: https://proyecto-romanacuna.onrender.com/docs
 
-Link al video explicativo: https://drive.google.com/file/d/133IoHuK6eywjAT6o664pOOeIpghVvmP2/view?usp=sharing
